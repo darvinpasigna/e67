@@ -9,4 +9,6 @@ const store = configureStore({
     },
 });
 
-export {store};
+
+type AppDispatch = typeof store.dispatch; //assign the dispatch type in store
+export {store, type AppDispatch};

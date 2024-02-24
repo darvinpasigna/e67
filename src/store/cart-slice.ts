@@ -23,6 +23,7 @@ const cartSlice = createSlice({
             state,
             action: PayloadAction<{id: string, title: string, price: number}>
         ){
+            // console.log(action.payload);
             //find the item id
             const itemIndex =state.items.findIndex(
                 //for every item found check
