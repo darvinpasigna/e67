@@ -47,7 +47,7 @@ const cartSlice = createSlice({
             );
               //remove the index
               if (state.items[itemIndex].quantity === 1) {
-                state.items.slice(itemIndex,1); //start with itemIndex delete only one item
+                state.items.splice(itemIndex,1); //start with itemIndex delete only one item
             } else {
                 state.items[itemIndex].quantity--;
             }
