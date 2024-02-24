@@ -56,4 +56,4 @@ const cartSlice = createSlice({
 });
 
 const {addToCart, removeFromCart} = cartSlice.actions;//destruction function required before export
-export {cartSlice, addToCart, removeFromCart};
+export {cartSlice, addToCart, removeFromCart, type CartItem};
