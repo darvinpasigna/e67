@@ -4,7 +4,7 @@ type ShopProps = {
   children: ReactNode;
 };
 
-export default function Shop({ children }: ShopProps) {
+const Shop = ({ children }: ShopProps)=> {
   return (
     <section id="shop">
       <h2>Elegant Clothing For Everyone</h2>
@@ -13,3 +13,5 @@ export default function Shop({ children }: ShopProps) {
     </section>
   );
 }
+
+export default Shop;
