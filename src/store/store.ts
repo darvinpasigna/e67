@@ -9,6 +9,6 @@ const store = configureStore({
     },
 });
 
-
+type RootState = ReturnType<typeof store.getState>; //assign the returntype of getState function to be used in useSelector hook
 type AppDispatch = typeof store.dispatch; //assign the dispatch type in store
-export {store, type AppDispatch};
+export {store, type AppDispatch, type RootState};

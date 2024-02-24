@@ -1,8 +1,10 @@
 //create custom dispatch
-import { useDispatch } from "react-redux";
-import { AppDispatch } from "./store";
+import { useDispatch, useSelector, type TypedUseSelectorHook } from "react-redux";
+import { AppDispatch, RootState } from "./store";
 
 type DispatchFunction = () => AppDispatch; //function type
 //create dispatch variable and export
 const useCartDispatch: DispatchFunction = useDispatch;
-export {useCartDispatch};
+//custom useSelector
+const useCartSelector: TypedUseSelectorHook<RootState> = useSelector;
+export {useCartDispatch, useCartSelector};
